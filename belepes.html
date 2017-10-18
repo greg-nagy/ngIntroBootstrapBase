@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>újJegyBazár</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+<style>
+
+.card-deck{
+    margin-bottom:10em;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+</style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="#">Jegybazár</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="esemenyek.html">Események</a>
+            <a class="nav-item nav-link" href="jegyek.html">Jegyek</a>
+            <a class="nav-item nav-link" href="rolunk.html">Rólunk</a>
+            <a class="nav-item nav-link active" href="belepes.html">Belépés<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+        <h1 class="display-4">Jegyek bárkitől, bárhol, bármikor!</h1>
+        <p class="lead">Használd a Jegybazárt és csereberélj jegyeket a legjobb bulikra. Elfogyott? Az orrod elől vitték el az utolsót? Ne aggódj, irány a JegyBazár!</p>
+    </div>
+</div>
+
+
+<div class="container">
+
+     <!-- Login form. -->
+
+     <div class="row justify-content-center row-login-form">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+             
+                <!-- Alert message. -->
+
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                Hello, itt tudsz belépni.
+              </div>
+    
+              <div class="card border-secondary">
+                <div class="card-header">Bejelentkezés</div>
+                <div class="card-body">
+                  <form id="loginForm" novalidate>
+                    <div class="form-group">
+                      <label for="loginEmail">Email</label>
+                      <input title="hibás email cím" name="loginEmail" type="email" class="form-control" id="loginEmail" placeholder="email">
+                      <small id="emailHelp" class="form-text text-muted">a címed nálunk biztonságban lesz</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="loginPassword">Jelszó</label>
+                      <input name="loginPassword" type="password" class="form-control" id="loginPassword" placeholder="jelszó">
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input name="rememberMe" type="checkbox" class="form-check-input">
+                        emlékezz rám
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">belépés</button>
+                  </form>
+                </div>
+              </div>
+    
+    
+            </div>
+          </div>
+          <!-- /Login form. -->
+        
+</div>
+
+    <footer class="bg-light text-center py-3 mt-4 sticky-bottom">
+        <div class="container">
+            <p class="m-0">&copy; Company 2017</p>
+        </div>
+    </footer> 
+
+            
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
