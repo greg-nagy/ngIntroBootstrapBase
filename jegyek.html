@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -8,191 +8,198 @@
 
     <title>újJegyBazár</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-
+<!-- Bootstrap core CSS -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Custom styles for this template -->
+ <link href="css/style.css" rel="stylesheet">
+ 
 </head>
 
-<!-- body -->
+<!-- body --> 
 <body>
 
-<!-- navbar -->
+ <!-- navbar --> 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Jegybazár</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="esemenyek.html">Események</a>
-                <a class="nav-item nav-link active" href="jegyek.html">Jegyek<span
-                        class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="rolunk.html">Rólunk</a>
-                <a class="nav-item nav-link" href="belepes.html">Belépés</a>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jegybazár</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="esemenyek.html">Események</a>
+                    <a class="nav-item nav-link" href="jegyek.html">Jegyek</a>
+                    <a class="nav-item nav-link" href="rolunk.html">Rólunk</a>
+                    <a class="nav-item nav-link" href="belepes.html">Belépés</a>
+                    <a href="regisztracio.html" class="nav-item nav-link btn btn-primary text-light ml-lg-2 btn-sm">Regisztráció</a>
+                </div>
             </div>
         </div>
-        <form class="form-inline ml-3">
-            <a href="regisztracio.html" class="btn btn-sm align-middle btn-primary"
-               role="button">Regisztráció</a>
-        </form>
+    </nav>
+<!-- navbar end --> 
+
+   <!-- jumbotron --> 
+
+   <div class="jumbotron py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Jegyek bárkitől, bárhol, bármikor!</h1>
+                <p class="lead">Használd a Jegybazárt és csereberélj jegyeket a legjobb bulikra. Elfogyott? Az orrod elől vitték el az utolsót? Ne aggódj, irány a JegyBazár!</p>
+        </div>
     </div>
-</nav>
 
 <!-- jumbotron -->
-
-<div class="jumbotron py-5">
-    <div class="container text-center">
-        <h1 class="display-4 mb-4">Jegyek</h1>
-        <p class="lead">Használd a Jegybazárt és csereberélj jegyeket a legjobb bulikra.
-            Elfogyott? Az orrod elől vitték el az utolsót? Ne aggódj, irány a
-            JegyBazár!</p>
-    </div>
-</div>
 
 
 <div class="container">
 
-    <!-- table -->
+    <!-- keresés, létrehozás -->
+
+    <div class="row  justify-content-around px-5 .d-inline-block">
+            
+                        <div class="col-auto text-center">
+                            <label>Keresés a jegyek között</label>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Esemény neve">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+                            </form>
+                        </div>
+            
+                        <div class="my-2 my-lg-0 text-center">
+                            <div>
+                                <label>Jegyet szeretnék létrehozni</label>
+                            </div>
+                            <div class="w-100"></div>
+                            <div><a href="newticket.html" class="btn btn-primary" role="button">Új jegy léterhozása</a></div>
+                        </div>
+            
+                    </div>
+
+    <!-- table --> 
+
 
     <table class="table table-responsive table-hover text-center mt-5">
-        <thead>
-        <tr>
-            <th class="text-center">Esemény neve</th>
-            <th class="text-center">Időpont</th>
-            <th class="text-center d-none d-md-table-cell">Előadó neve</th>
-            <th class="text-center d-none d-md-table-cell">Hány db?</th>
-            <th class="text-center">Licitek megtekintése</th>
-        </tr>
-        </thead>
 
-        <tbody>
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+            <thead>
+                <tr>
+                    <th class="text-center">Esemény neve</th>
+                    <th class="text-center">Időpont</th>
+                    <th class="text-center">Előadó neve</th>
+                    <th class="text-center">Hány db?</th>
+                    <th class="text-center">Licitek megtekintése</th>
+                </tr>
+            </thead>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+            <tbody>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td>3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        <tr>
-            <td scope="row" data-toggle="tooltip" data-placement="bottom"
-                title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide">
-                <a href="#">Sziget fesztivál</a></td>
-            <td>2018.08.03. 13:00</td>
-            <td class="d-none d-md-table-cell">Példa Jóska</td>
-            <td class="d-none d-md-table-cell">3db</td>
-            <td><a href="#">Tovább a licithez</a></td>
-            </td>
-        </tr>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td >Példa Jóska</td>
+                    <td >3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td>
+                </tr>
 
-        </tbody>
-    </table>
+                <tr>   
+                    <td scope="row" data-toggle="tooltip" data-placement="bottom" title="Még 3 napig lehet licitálni, az esemény megtekintéséhez kattints ide"><a href="#">Sziget fesztivál</a></td>
+                    <td>2018.08.03. 13:00</td>
+                    <td>Példa Jóska</td>
+                    <td >3db</td>
+                    <td><a href="licit.html">Tovább a licithez</a></td></td>
+                </tr>
 
-
-</div>
-<!-- caontainer-end -->
-
-<!-- footer -->
-
-<footer class="bg-light text-center py-3 mt-4 sticky-bottom">
-    <div class="container">
-        <p class="m-0">&copy; Company 2017</p>
+            </tbody>
+        </table>
+    
+        <nav>
+            <ul class="pagination mt-5">
+                <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Előző</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#">Következő</a>
+                </li>
+            </ul>
+        </nav>
+       
     </div>
-</footer>
+<!-- caontainer-end --> 
 
+<!-- footer --> 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="lib/jquery-3.2.1.slim.min.js"></script>
-<script src="lib/popper.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <footer class="bg-light text-center py-3 mt-4">
+        <div class="container">
+          <p class="m-0">&copy; Company 2017</p>
+        </div>
+    </footer>  
+  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>újJegyBazár</title>
+    <title>újJegyBazár| Új esemény</title>
 
     <!-- Bootstrap core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
- <link href="css/style.css" rel="stylesheet">
- 
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
- 
- <!-- body -->  
 
-    <body>
+<!-- body -->
 
-  <!-- navbar --> 
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <!-- navbar --> 
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Jegybazár</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
@@ -52,39 +53,63 @@
 
 <!-- jumbotron -->
 
- <!-- Rólunk -->  
-
     <div class="container">
 
-        <div class="row">
-            <div class="col align-self-center m-4"> 
-                <img class="img-fluid" src="img/party.jpg" alt="">
-            </div>
+<!--Form with header-->
+        <div class="card mb-4 col-11 col-sm-8 mx-auto p-0">
 
-            <div class="col align-self-center">
-                <h3>Lorem, ipsum dolor</h1><br>
-                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut ipsam at nisi dicta minus optio dolor.</p>
-                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut ipsam at nisi dicta minus optio dolor. Soluta ipsum eligendi, aut magnam, in ipsam, inventore magni neque quos veniam rerum!</p>
-                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-header">
+                <div class="bg-light text-center">
+                    <h3>Új esemény létrehozása</h3>
+                </div>
+            </div>
+<!--card-body-->
+            <div class="card-body">
+                
+                <div class="form-group">
+                    <label for="esemeny">Esemény címe:</label>
+                    <input type="text" class="form-control mb-3" id="esemeny" placeholder="Esemény címe">
+                </div>
+
+                <div class="form-group">
+                    <label for="idopont">Esemény időpontja</label>
+                    <input type="date" class="form-control mb-3" id="idopont" placeholder="Esemény időpontja">
+                </div>
+
+                <div class="form-group row">
+                    <img class="img-fluid mx-auto" src="img/newevent.png" alt="">
+                    <div class="form-group mx-auto mt-3">
+                        <label for="kep">Válassz képet az eseményhez</label>
+                        <input type="file" class="form-control-file" id="kep">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                        <label for="leiras">Esemény leírása</label>
+                        <textarea class="form-control" placeholder="Esemény leírása" id="leiras"></textarea>
+                </div>
+                <div class="text-center mb-3">
+                        <input class="btn btn-primary btn-lg" type="submit" value="létrehozás">
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col align-self-center m-4"> 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, qui porro deleniti ipsum aperiam placeat officiis neque dolores dolorum! Nihil, aperiam maxime quasi deserunt rerum deleniti quaerat. Illo ut unde est voluptates, minus laborum ullam quis! Fuga sit facere provident nesciunt quidem inventore repellendus amet? Esse ipsum culpa voluptas dicta!</p>
-            </div>
-        </div>
     </div>
 
- <!-- footer -->  
+       
 
-    <footer class="bg-light text-center py-3 mt-4 sticky-bottom">
+<!--container end-->
+    </div>
+
+
+
+    <!-- footer -->
+
+    <footer class="bg-light text-center py-3">
         <div class="container">
             <p class="m-0">&copy; Company 2017</p>
         </div>
-    </footer> 
-
-            
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -92,5 +117,7 @@
     <script src="lib/jquery-3.2.1.slim.min.js"></script>
     <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+</body>
+<!-- style end-->
+
 </html>
